@@ -1,0 +1,129 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Editor.gd" type="Script" id=1]
+
+[node name="Editor" type="Node"]
+
+[node name="GraphEdit" type="GraphEdit" parent="."]
+margin_left = -0.935242
+margin_top = -0.970337
+margin_right = 1917.06
+margin_bottom = 1083.03
+scroll_offset = Vector2( -612, -339 )
+script = ExtResource( 1 )
+
+[node name="messageNode" type="Button" parent="."]
+margin_left = 323.155
+margin_top = 12.2173
+margin_right = 425.155
+margin_bottom = 32.2173
+text = "MessageNode"
+
+[node name="DecisionNode" type="Button" parent="."]
+margin_left = 438.978
+margin_top = 10.9911
+margin_right = 540.978
+margin_bottom = 30.9911
+text = "DecisionNode"
+
+[node name="QuestNode" type="Button" parent="."]
+margin_left = 553.356
+margin_top = 12.2558
+margin_right = 638.356
+margin_bottom = 32.2558
+text = "QuestNode"
+
+[node name="playerGetItemNode" type="Button" parent="."]
+margin_left = 645.058
+margin_top = 12.98
+margin_right = 784.058
+margin_bottom = 32.98
+text = "playerGetItemNode"
+
+[node name="questCompleteNode" type="Button" parent="."]
+margin_left = 795.657
+margin_top = 13.3761
+margin_right = 939.657
+margin_bottom = 33.3761
+text = "questCompleteNode"
+
+[node name="rewardQuestNode" type="Button" parent="."]
+margin_left = 950.234
+margin_top = 12.0492
+margin_right = 1078.23
+margin_bottom = 32.0492
+text = "rewardQuestNode"
+
+[node name="npcGiveItemNode" type="Button" parent="."]
+margin_left = 1084.03
+margin_top = 11.1467
+margin_right = 1213.03
+margin_bottom = 31.1467
+text = "npcGiveItemNode"
+
+[node name="endNode" type="Button" parent="."]
+margin_left = 1229.43
+margin_top = 11.1467
+margin_right = 1299.43
+margin_bottom = 31.1467
+text = "endNode"
+
+[node name="export" type="Button" parent="."]
+margin_left = 1363.97
+margin_top = 10.6584
+margin_right = 1526.97
+margin_bottom = 30.6584
+text = "export"
+
+[node name="startNode" type="Button" parent="."]
+margin_left = 222.445
+margin_top = 12.22
+margin_right = 313.445
+margin_bottom = 32.22
+text = "startNode"
+
+[node name="fileName" type="TextEdit" parent="."]
+margin_left = 1626.0
+margin_top = 7.0
+margin_right = 1894.0
+margin_bottom = 29.0
+text = "dialogueSave.json"
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1545.89
+margin_top = 13.0512
+margin_right = 1608.89
+margin_bottom = 27.0512
+text = "File name"
+
+[node name="save" type="Button" parent="."]
+margin_left = 1365.53
+margin_top = 47.7947
+margin_right = 1528.53
+margin_bottom = 67.7947
+text = "save"
+
+[node name="saveLabel" type="Label" parent="."]
+margin_left = 1544.65
+margin_top = 54.6912
+margin_right = 1607.65
+margin_bottom = 68.6912
+text = "File name"
+
+[node name="fileNameSave" type="TextEdit" parent="."]
+margin_left = 1628.0
+margin_top = 52.0
+margin_right = 1893.0
+margin_bottom = 74.0
+text = "dialogueProject"
+[connection signal="connection_request" from="GraphEdit" to="GraphEdit" method="_on_GraphEdit_connection_request"]
+[connection signal="pressed" from="messageNode" to="GraphEdit" method="_on_messageNode_pressed"]
+[connection signal="pressed" from="DecisionNode" to="GraphEdit" method="_on_DecisionNode_pressed"]
+[connection signal="pressed" from="QuestNode" to="GraphEdit" method="_on_QuestNode_pressed"]
+[connection signal="pressed" from="playerGetItemNode" to="GraphEdit" method="_on_playerGetItemNode_pressed"]
+[connection signal="pressed" from="questCompleteNode" to="GraphEdit" method="_on_questCompleteNode_pressed"]
+[connection signal="pressed" from="rewardQuestNode" to="GraphEdit" method="_on_rewardQuestNode_pressed"]
+[connection signal="pressed" from="npcGiveItemNode" to="GraphEdit" method="_on_npcGiveItemNode_pressed"]
+[connection signal="pressed" from="endNode" to="GraphEdit" method="_on_endNode_pressed"]
+[connection signal="pressed" from="export" to="GraphEdit" method="_on_export_pressed"]
+[connection signal="pressed" from="startNode" to="GraphEdit" method="_on_startNode_pressed"]
